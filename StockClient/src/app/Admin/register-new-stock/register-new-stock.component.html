@@ -1,0 +1,51 @@
+<app-admin-nav></app-admin-nav>
+<div class="container-fluid p-5 m-5">
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="card shadow">
+              
+              <div class="card-body text-center">
+                  <h2>Add New Stock</h2>
+                  <hr>
+                  <form role="form" (ngSubmit)="onSubmit()">
+                  <div class="form-group mb-3">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="stockname" [ngModelOptions]="{standalone: true}" placeholder="Stock Name" type="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="ceo" [ngModelOptions]="{standalone: true}" placeholder="CEO" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="description" [ngModelOptions]="{standalone: true}" placeholder="Description" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="ipodate" [ngModelOptions]="{standalone: true}" placeholder="IPO date" type="date" >
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary my-4">Add</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

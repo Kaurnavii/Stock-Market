@@ -1,0 +1,67 @@
+<app-admin-nav></app-admin-nav>
+<div class="container mt-5">
+        <div class="row">
+          <div class="col-6">
+            <div class="card shadow">
+              
+              <div class="card-body text-center">
+                  <h2>Add/Update IPO details</h2>
+                  <hr>
+                  <form role="form" (ngSubmit)="onSubmit()">
+                  <div class="form-group mb-3">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="companycode" [ngModelOptions]="{standalone: true}" placeholder="Company code" type="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="stockexchange" [ngModelOptions]="{standalone: true}" placeholder="Stock Exchange" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="pricepershare" [ngModelOptions]="{standalone: true}" placeholder="Price per Share" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="totalshares" [ngModelOptions]="{standalone: true}" placeholder="Total no of shares" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="openingdate" [ngModelOptions]="{standalone: true}" placeholder="Opening date/time" type="date">
+                    </div>
+                  </div>
+                   <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                      </div>
+                      <input class="form-control" [(ngModel)]="remarks" [ngModelOptions]="{standalone: true}" placeholder="Remarks" type="text">
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary my-4">Add/Update</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

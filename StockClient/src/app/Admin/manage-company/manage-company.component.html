@@ -1,0 +1,57 @@
+<app-admin-nav></app-admin-nav>
+<div class="container-fluid m-5 p-5  ">      	
+    <div class="row">
+      <div class="col-8 mb-5 mb-xl-0">
+        <div class="card shadow">
+          <div class="card-header border-0">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3 class="mb-0">List of Companies</h3>
+              </div>
+              <div class="col text-right">
+                <a  [routerLink]="['/CreateCompany']" class="btn btn-sm btn-primary">+ Add Company</a>
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <!-- Projects table -->
+            <table class="table align-items-center table-flush">
+              <thead class="thead-light">
+                <tr >
+                  <th scope="col">Company Name</th>
+                  <th scope="col">CEO</th>
+                  <th scope="col">Turnover</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">IPO Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr *ngFor="let comp of companies">
+                  <th scope="row">
+                    {{comp.companyname}}
+                  </th>
+                  <td>
+                    {{comp.ceo}}
+                  </td>
+                  <td>
+                    {{comp.turnover}}
+                  </td>
+                  <td>
+                    {{comp.description}}
+                  </td>
+                  <td>
+                    {{comp.ipodate}}
+                  </td>
+                  <td>
+                     <a  [routerLink]="['/UpdateCompany']" > <button class="btn btn-outline-danger">Edit</button></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+ 

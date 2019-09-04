@@ -1,0 +1,54 @@
+<app-user-nav></app-user-nav>
+
+<div class="container-fluid m-5">      	
+        <div class="row mt-5">
+          <div class="col-xl-8 mb-5 mb-xl-0">
+            <div class="card shadow">
+              <div class="card-header border-0">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h3 class="mb-0">List of IPO's</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Company Code</th>
+                      <th scope="col">Stock Exchange</th>
+                      <th scope="col">Price per Share</th>
+                      <th scope="col">Total no of shares</th>
+                      <th scope="col">Opening Date/Time</th>
+                      <th scope="col">Remarks</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let ipo of ipos">
+                      <th scope="row">
+                        {{ipo.companycode}}
+                      </th>
+                      <td>
+                        {{ipo.stockexchange}}                   
+                      </td>
+                      <td>
+                        {{ipo.pricepershare}}
+                      </td>
+                      <td>
+                        {{ipo.totalshares}}
+                      </td>
+                      <td>
+                          {{ipo.openingdate}}
+                      </td>
+                      <td>
+                        {{ipo.remarks}}
+                    </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+              </div>
